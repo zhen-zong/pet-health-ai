@@ -21,7 +21,7 @@ const routes = [
     {
         path: '/login',
         name: 'Login',
-        component: () => import('../views/Login/Login.vue'), // 登录/注册页
+        component: () => import('../views/login/Login.vue'), // 登录/注册页
         meta: { public: true }
     },
     {
@@ -33,7 +33,7 @@ const routes = [
     {
         path: '/detect',
         name: 'Detect',
-        component: () => import('../views/Upload/Upload.vue'),
+        component: () => import('../views/upload/Upload.vue'),
         meta: { requireAuth: true }
     },
     {
@@ -45,7 +45,7 @@ const routes = [
     {
         path: '/history',
         name: 'History',
-        component: () => import('../views/History/History.vue'),
+        component: () => import('../views/history/History.vue'),
         meta: { requireAuth: true }
     },
     {
@@ -61,7 +61,7 @@ const routes = [
     {
         path: '/help',
         name: 'Help',
-        component: () => import('../views/Help/Help.vue'),
+        component: () => import('../views/help/Help.vue'),
         meta: { public: true }
     },
     {
